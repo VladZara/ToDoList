@@ -3,7 +3,7 @@
 const inputfield = document.querySelector('.input-text');
 const addbtn = document.querySelector('.addBtn');
 const taskbox = document.querySelector('.task-box');
-const deleteEl = document.querySelectorAll('.delete-button');
+
 
 addbtn.addEventListener('click', () => {
  let val = inputfield.value;
@@ -22,14 +22,22 @@ addbtn.addEventListener('click', () => {
  message.classList.add('long');
  taskbox.append(message); 
  message.append(img);
-});
-
-deleteEl.addEventListener('click', (e) => {
-    deleteEl.parentElement.remove();
-    deleteEl.forEach(item => {
-        e.target.parentElement.remove();
+ const deleteEl = document.querySelectorAll('.delete-button');
+ deleteEl.forEach(item => {
+    item.addEventListener('click', () => {
+        let parent = item.parentElement;
+        parent.style.display = 'none';
     })
 })
+});
+
+// deleteEl.addEventListener('click', (e) => {
+//     deleteEl.parentElement.remove();
+//     deleteEl.forEach(item => {
+//         e.target.parentElement.remove();
+//     })
+// })
+
 
  
     
