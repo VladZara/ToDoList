@@ -1,5 +1,5 @@
 .imagine{
-    background-image: url("113618-blue-diagonal-stripes-background-vector.jpg");
+    background-image: url("bgimg.jpg");
     width: 100vw;
     height:100vh;
     background-size: cover;
@@ -18,66 +18,86 @@
     padding: 30px;
     margin: 0 auto;
     width: 500px;
-    height: 300px;
-    background-color: #CAF0F8;
+    height: auto;
+    background-color: #11101D;
     border-radius: 10px;
+    color: white;
+
 }
-.box {
-    color: #000000;
-    background-color: black;
-    border: none;
-}
+
 
 .delete-button{
     position: absolute;
     top : 5px;
     right: 10px;
     width : 24px;
+    cursor: pointer;
 
 }
 
 .round {
     width: 1.3em;
     height: 1.3em;
-    background-color: white;
+    background-color: #1A1933;
     border-radius: 50%;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     appearance: none;
     outline: none;
     cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+
 }
 
 .round:checked {
-    background-color: #3ae342;
+    background-color: #f19595;
+    border: 1px solid #f19595;
 }
 
 .long{
-    padding-top: 5px;
+    padding-top: -5px;
     position: relative;
-    background-color: #00B4D8;
-    width : 100%;
+    background-color: #1A1933;
+    width : auto;
     height : 37px;
     border-radius: 5px;
     margin-bottom: 10px;
+}
 
-}
-.input{
-    width: 300px;
-    background-color: #CAF0F8;
-    display: inline-block;
-}
 
 .addBtn{
     padding: 9px;
     width: 36px;
-    background: #d06060;
+    height: 36px;
+    background: #f19595;
     border-radius: 100%;
     text-align: center;
     cursor: pointer;
     display: inline-block;
     margin-left: 46px;
+    color: white;
+    border: 0px;
+  box-shadow: #f58989 0 0 10px;
+    margin-bottom: 13px;
+
 }
 .inputfield button.active {
      opacity: 1;
      pointer-events: auto;  
+}
+
+.input-text{
+    background-color: #11101D;
+    color: white;
+    border: 0;
+    border-bottom:  solid #4C4B58 1px;
+    padding: 5px;
+    width: 350px;
+
+}
+
+.line-over-text{
+    text-decoration: line-through;
+    color: #4C4B58;
 }
