@@ -47,6 +47,35 @@ inputfield.value = '';
 toggleCheckbox()
 });
 
+window.addEventListener('keydown', (e) => {
+    let val = inputfield.value;
+    if (val.trim().length === 0 ){
+        return false;
+   }
+   if(e.key === 'Enter'){
+    const message = document.createElement('li');
+    const img = document.createElement('img');
+    img.src = 'trash.png';
+    img.classList.add('delete-button');
+    message.append(val);
+    message.classList.add('long');
+    taskbox.append(message); 
+    message.append(img);
+    const deleteEl = document.querySelectorAll('.delete-button');
+    deleteEl.forEach(item => {
+       item.addEventListener('click', () => {
+           let parent = item.parentElement;
+           parent.style.display = 'none';
+           
+       });
+   });
+} else {
+    preventDefault()
+}
+   inputfield.value = '';
+   toggleCheckbox()
+   });
+   
 
 
     
