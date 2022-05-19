@@ -34,27 +34,6 @@
     cursor: pointer;
 
 }
-
-.round {
-    width: 1.3em;
-    height: 1.3em;
-    background-color: #1A1933;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    appearance: none;
-    outline: none;
-    cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-
-}
-
-.round:checked {
-    background-color: #f19595;
-    border: 1px solid #f19595;
-}
-
 .long{
     padding-left : 40px;
     padding-top: 10px;
